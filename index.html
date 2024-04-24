@@ -386,12 +386,12 @@
 
       // Загрузка файлов
       var unityLoader = document.createElement("script");
-      unityLoader.src = "Build/Match3Collect.loader.js";
+      unityLoader.src = "Build/CardCollect.loader.js";
       unityLoader.onload = () => {
         createUnityInstance(canvas, {
-          dataUrl: "Build/Match3Collect.data.unityweb",
-          frameworkUrl: "Build/Match3Collect.framework.js.unityweb",
-          codeUrl: "Build/Match3Collect.wasm.unityweb",
+          dataUrl: "Build/CardCollect.data.unityweb",
+          frameworkUrl: "Build/CardCollect.framework.js.unityweb",
+          codeUrl: "Build/CardCollect.wasm.unityweb",
           streamingAssetsUrl: "StreamingAssets",
           companyName: "Nichathan Gaming",
           productName: "Nichathan's Solitaire Pack",
@@ -414,7 +414,7 @@
       };
       document.body.appendChild(unityLoader);
     </script>
-      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.0.8/dist/index.umd.js"></script>
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.0.8/dist/index.umd.js"></script>
 
        <script>
        function initBridge() {
@@ -546,5 +546,6 @@
 	  }
 	  
   </script>
+
   </body>
 </html>
