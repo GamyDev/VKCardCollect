@@ -135,7 +135,9 @@
       var loading_logo = document.querySelector(".loading_logo");
       var console_helper = document.querySelector(".console_helper");
       var console_helper_text = document.getElementById("console_helper_text");
-
+      var cnv=document.getElementById('canvas');
+      cnv.requestFullscreen=null;
+      cnv.webkitRequestFullscreen=null;
       // Для того, чтобы текст правильно масштабировался
       var scaleFactor;
       var enableConsoleHelper = true;
@@ -199,7 +201,7 @@
       loading_logo.style.backgroundImage = "url('logo.png')";
 
       // Настраиваем фон полос по бокам
-      document.body.style.backgroundColor = "#BBDD98";
+      document.body.style.backgroundColor = "#5E315A";
 
       loading_bg.style.backgroundImage = "linear-gradient(#2976fa, #6919c6)";
 
@@ -414,8 +416,8 @@
       };
       document.body.appendChild(unityLoader);
     </script>
-     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.0.8/dist/index.umd.js"></script>
 
+     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@vkontakte/vk-bridge@2.0.8/dist/index.umd.js"></script>
        <script>
        function initBridge() {
           const bridge = vkBridge.default;
