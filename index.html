@@ -199,7 +199,7 @@
       loading_logo.style.backgroundImage = "url('logo.png')";
 
       // Настраиваем фон полос по бокам
-      document.body.style.backgroundColor = "#5E315A";
+      document.body.style.backgroundColor = "#BBDD98";
 
       loading_bg.style.backgroundImage = "linear-gradient(#2976fa, #6919c6)";
 
@@ -385,7 +385,7 @@
       var myGameInstance = null;
 
       // Загрузка файлов
-      var unityLoader = document.createElement("script");
+     var unityLoader = document.createElement("script");
       unityLoader.src = "Build/CardCollect.loader.js";
       unityLoader.onload = () => {
         createUnityInstance(canvas, {
@@ -396,7 +396,7 @@
           companyName: "Nichathan Gaming",
           productName: "Nichathan's Solitaire Pack",
           productVersion: "1.1.0",
-	  showBanner: unityShowBanner,
+    showBanner: unityShowBanner,
         }, (progress) => {
           loading_bar_fill.style.width = 111.2 * progress + "%";
           Update();
